@@ -12,7 +12,7 @@
 <style>
     body {
         font-family: 'Roboto', sans-serif;
-        background: #D7FFCF;
+        background: rgb(223, 223, 223);
     }
     
     .site {
@@ -26,7 +26,7 @@
     }
     
     h1 {
-        font-family: 'Baloo', cursive;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 4em;
         text-align: center;
         margin-top: 75px;
@@ -47,11 +47,6 @@
     
     form {
         margin-top: 40px;
-    }
-    
-    a {
-        color: #5cb85c;
-        font-size: 20px;
     }
     
     #friendModal {
@@ -220,16 +215,15 @@
 
 
 <!--bootstrap script-->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
 
 <script type="text/javascript">
 	$("#submitBtn").on("click", function(event) {
 		event.preventDefault();
-		// Form validation
+		//Form
 		var valid = true;
 		if($("#name").val() === "" || $("#photo").val() === "") {
 			valid = false;
@@ -253,15 +247,14 @@
 					$("#question10").val()
 				]
 			};
-			var currentURL = window.location.origin;
+			//var currentURL = window.location.origin;
 			// Ajax call for receiving response after POST req
-			$.post(currentURL + "/api/friends", newUser, function(data) {
+			$.post("/api/friends", newUser, function(data) {
 				$("#bestMatch").text(data.name);
 				$("#matchPic").attr("src", data.photo);
 				$("#friendModal").modal("toggle");
 			});
 		} else {
-			// If a required field is missing, show alert
 			alert("Survey is incomplete!");
 		}
 	});

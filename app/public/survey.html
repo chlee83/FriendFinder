@@ -68,6 +68,8 @@
 
 </head>
 <body>
+
+	<!--survey title-->
 	<div class="container content">
 		<h1>Friend Finder Survey</h1>
 
@@ -75,119 +77,123 @@
 		<p>Take a short survey to find a new friend that is a great match for you!</p>
 		<form>
 			<div class="form-group">
-				<input id="name" type="text" class="form-control" placeholder="Name (Required)">
+				<label>Name (Required)</label>
+				<input id="name" type="text" class="form-control">
 			</div>
 			<div class="form-group">
-				<input id="photo" type="text" class="form-control" placeholder="Link to Profile Photo (Required)">
+				<label>Link to Profile Photo (Required)</label>
+				<input id="photo" type="text" class="form-control">
 			</div>
+
+			<!-- survey questions start -->
 			<div class="form-group">
-				<label for="question1">I like summer more than winter.</label>
+				<label for="question1">You prefer the summer more than winter.</label>
 				<select class="form-control custom-select-sm" id="question1">
-					<option value="empty">1 = strongly No  &nbsp; || &nbsp;  5 = strongly Yes</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
+					<option value="blank">Choose</option>
+					<option value="1">1 - strongly disagree</option>
+					<option value="2">2 - disagree</option>
+					<option value="3">3 - neutral</option>
+					<option value="4">4 - agree</option>
+					<option value="5">5 - strongly agree</option>
 				</select>
 			</div>
 			<div class="form-group">
-				<label for="question2">I love animals.</label>
+				<label for="question2">You love animals.</label>
 				<select class="form-control custom-select-sm" id="question2">
-					<option value="empty">1 = strongly No  &nbsp; || &nbsp;  5 = strongly Yes</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
+					<option value="blank">Choose</option>
+					<option value="1">1 - strongly disagree</option>
+					<option value="2">2 - disagree</option>
+					<option value="3">3 - neutral</option>
+					<option value="4">4 - agree</option>
+					<option value="5">5 - strongly agree</option>
 				</select>
 			</div>
 			<div class="form-group">
-				<label for="question3">I am a natural leader.</label>
+				<label for="question3">You are a natural leader.</label>
 				<select class="form-control custom-select-sm" id="question3">
-					<option value="empty">1 = strongly No  &nbsp; || &nbsp;  5 = strongly Yes</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
+					<option value="blank">Choose</option>
+					<option value="1">1 - strongly disagree</option>
+					<option value="2">2 - disagree</option>
+					<option value="3">3 - neutral</option>
+					<option value="4">4 - agree</option>
+					<option value="5">5 - strongly agree</option>
 				</select>
 			</div>
 			<div class="form-group">
-				<label for="question4">I love watching movies.</label>
+				<label for="question4">You love watching movies.</label>
 				<select class="form-control custom-select-sm" id="question4">
-					<option value="empty">1 = strongly No  &nbsp; || &nbsp;  5 = strongly Yes</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
+					<option value="blank">Choose</option>
+					<option value="1">1 - strongly disagree</option>
+					<option value="2">2 - disagree</option>
+					<option value="3">3 - neutral</option>
+					<option value="4">4 - agree</option>
+					<option value="5">5 - strongly agree</option>
 				</select>
 			</div>
 			<div class="form-group">
-				<label for="question5">I like the outdoors.</label>
+				<label for="question5">You like the outdoors.</label>
 				<select class="form-control custom-select-sm" id="question5">
-					<option value="empty">1 = strongly No  &nbsp; || &nbsp;  5 = strongly Yes</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
+					<option value="blank">Choose</option>
+					<option value="1">1 - strongly disagree</option>
+					<option value="2">2 - disagree</option>
+					<option value="3">3 - neutral</option>
+					<option value="4">4 - agree</option>
+					<option value="5">5 - strongly agree</option>
 				</select>
 			</div>
 			<div class="form-group">
-				<label for="question6">I am a social butterfly.</label>
+				<label for="question6">You are a social butterfly.</label>
 				<select class="form-control custom-select-sm" id="question6">
-					<option value="empty">1 = strongly No  &nbsp; || &nbsp;  5 = strongly Yes</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
+					<option value="blank">Choose</option>
+					<option value="1">1 - strongly disagree</option>
+					<option value="2">2 - disagree</option>
+					<option value="3">3 - neutral</option>
+					<option value="4">4 - agree</option>
+					<option value="5">5 - strongly agree</option>
 				</select>
 			</div>
 			<div class="form-group">
-				<label for="question7">I like working out regularly.</label>
+				<label for="question7">You like working out regularly.</label>
 				<select class="form-control custom-select-sm" id="question7">
-					<option value="empty">1 = strongly No  &nbsp; || &nbsp;  5 = strongly Yes</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
+					<option value="blank">Choose</option>
+					<option value="1">1 - strongly disagree</option>
+					<option value="2">2 - disagree</option>
+					<option value="3">3 - neutral</option>
+					<option value="4">4 - agree</option>
+					<option value="5">5 - strongly agree</option>
 				</select>
 			</div>
 			<div class="form-group">
-				<label for="question8">I have my life all planned out.</label>
+				<label for="question8">You have your life all planned out.</label>
 				<select class="form-control custom-select-sm" id="question8">
-					<option value="empty">1 = strongly No  &nbsp; || &nbsp;  5 = strongly Yes</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
+					<option value="blank">Choose</option>
+					<option value="1">1 - strongly disagree</option>
+					<option value="2">2 - disagree</option>
+					<option value="3">3 - neutral</option>
+					<option value="4">4 - agree</option>
+					<option value="5">5 - strongly agree</option>
 				</select>
 			</div>
 			<div class="form-group">
-				<label for="question9">I am a city person.</label>
+				<label for="question9">You are a city person.</label>
 				<select class="form-control custom-select-sm" id="question9">
-					<option value="empty">1 = strongly No  &nbsp; || &nbsp;  5 = strongly Yes</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
+					<option value="blank">Choose</option>
+					<option value="1">1 - strongly disagree</option>
+					<option value="2">2 - disagree</option>
+					<option value="3">3 - neutral</option>
+					<option value="4">4 - agree</option>
+					<option value="5">5 - strongly agree</option>
 				</select>
 			</div>
 			<div class="form-group">
-				<label for="question10">I like to drink occassionally.</label>
+				<label for="question10">You like to drink occassionally.</label>
 				<select class="form-control custom-select-sm" id="question10">
-					<option value="empty">1 = strongly No  &nbsp; || &nbsp;  5 = strongly Yes</option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-					<option value="5">5</option>
+					<option value="blank">Choose</option>
+					<option value="1">1 - strongly disagree</option>
+					<option value="2">2 - disagree</option>
+					<option value="3">3 - neutral</option>
+					<option value="4">4 - agree</option>
+					<option value="5">5 - strongly agree</option>
 				</select>
 			</div>
 		</form>
@@ -195,7 +201,7 @@
 			<button id="submitBtn" type="submit" class="btn btn-success btn-lg">Submit</button>
 		</div>
 		
-		<!-- Modal after survey completion -->
+		<!-- Modal -->
 		<div id="friendModal" class="modal fade" role="dialog">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -216,12 +222,12 @@
 	</div>
 
 
-<!--bootstrap script-->
+<!--bootstrap-->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
-
+<!-- main script -->
 <script type="text/javascript">
 	$("#submitBtn").on("click", function(event) {
 		event.preventDefault();
@@ -229,7 +235,7 @@
 		var valid = true;
 		if($("#name").val() === "" || $("#photo").val() === "") {
 			valid = false;
-		} else if($("#question1").val() === "empty" || $("#question2").val() === "empty" || $("#question3").val() === "empty" || $("#question4").val() === "empty" || $("#question5").val() === "empty" || $("#question6").val() === "empty" || $("#question7").val() === "empty" || $("#question8").val() === "empty" || $("#question9").val() === "empty" || $("#question10").val() === "empty") {
+		} else if($("#question1").val() === "blank" || $("#question2").val() === "blank" || $("#question3").val() === "blank" || $("#question4").val() === "blank" || $("#question5").val() === "blank" || $("#question6").val() === "blank" || $("#question7").val() === "blank" || $("#question8").val() === "blank" || $("#question9").val() === "blank" || $("#question10").val() === "blank") {
 			valid = false;
 		}
 		if(valid === true) {

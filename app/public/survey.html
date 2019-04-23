@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+	<!--bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
     <title>Friend Finder</title>
+
+	<!-- fonts awesome -->
+	<script src="https://use.fontawesome.com/c99ec62ba2.js"></script>
 
 <style>
     body {
@@ -71,10 +75,10 @@
 
 	<!--survey title-->
 	<div class="container content">
-		<h1>Friend Finder Survey</h1>
+		<h1 style="color:#224a7e"><i class="fa fa-male" aria-hidden="true"></i> Friend Finder Survey <i class="fa fa-female" aria-hidden="true"></i></h1>
 
 		<br><hr><br>
-		<p>Take a short survey to find a new friend that is a great match for you!</p>
+		<h4>Take a short survey to find a new friend that is a great match for you!</h4>
 		<form>
 			<div class="form-group">
 				<label>Name (Required)</label>
@@ -198,7 +202,7 @@
 			</div>
 		</form>
 		<div class="text-center">
-			<button id="submitBtn" type="submit" class="btn btn-success btn-lg">Submit</button>
+			<button id="submitBtn" type="submit" class="btn btn-primary btn-lg">Submit</button>
 		</div>
 		
 		<!-- Modal -->
@@ -207,7 +211,7 @@
 				<div class="modal-content">
 					<div class="modal-header">
 						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						<h3 class="modal-title">Your New Best Friend</h1>
+						<h3 class="modal-title">Best Match!</h1>
 					</div>
 					<div class="modal-body">
 						<h2 id="bestMatch"></h2>
@@ -255,9 +259,12 @@
 					$("#question10").val()
 				]
 			};
-			//var currentURL = window.location.origin;
-			// Ajax call for receiving response after POST req
-			$.post("/api/friends", newUser, function(data) {
+			
+			//grab the url
+			var currentURL = window.location.origin;
+			
+			// Ajax post the data to the friends API
+			$.post(currentURL + "/api/friends", newUser, function(data) {
 				$("#bestMatch").text(data.name);
 				$("#matchPic").attr("src", data.photo);
 				$("#friendModal").modal("toggle");

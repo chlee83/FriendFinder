@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!--bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    
+    <!-- fonts awesome -->
+    <script src="https://use.fontawesome.com/c99ec62ba2.js"></script>
 
     <title>Friend Finder</title>
     
@@ -17,16 +21,21 @@
         <div class="row">
             <div class="col-12 jumbotron text-center">
                 <h1>Friend Finder App</h1>
-                <p></p>
-                
-                <div class="text-center">
-                    <a href="/survey"><button class="btn btn-lg btn-success">Take Survey</button></a>
-                    <br><br>
-                    <p>Click the button above to find a friend that's a perfect match for you!</p>
-                </div>
+                <br><br>              
+                <a href="/survey"><button class="btn btn-lg btn-primary"><i class="fa fa-list-alt" aria-hidden="true"></i> Take Survey</button></a>
+                <br><br>
+                <p>Click the button above to find a friend that's a perfect match for you!</p>
             </div>
         </div>
     </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>
+                <a href="/api/friends">API Friends List</a> 
+            </p>
+        </div>
+    </footer>
 
 
 </body>

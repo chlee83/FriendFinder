@@ -10,8 +10,7 @@ module.exports = function(app) {
   
     //grab user input
     app.post("/api/friends", function(req, res) {
-        console.log(req.body.scores);
-    
+ 
         // Receive user details (name, photo, scores)
         var user = req.body;
     
@@ -22,7 +21,7 @@ module.exports = function(app) {
     
         //variables to hold values for matching
         var match = 0;
-        var minValue = 40;
+        var minValue = 100;
     
         // Compare the user and each friend's scores, one set at a time
         //  whatever the difference is, add to the total difference
@@ -33,7 +32,7 @@ module.exports = function(app) {
             totalDif += difference;
           }
     
-          // if there is a new minimum value, change min value
+          // if there is a new minimum value, change matching person
           if(totalDif < minValue) {
             match = i;
             minValue = totalDif;
